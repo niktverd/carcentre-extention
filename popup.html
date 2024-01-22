@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <title>Document</title>
+        <style>
+            html,
+            body {
+                width: 770px;
+                font-size: small;
+            }
+            input {
+                max-width: 60px;
+            }
+            input[type=text]:focus {
+                max-width: 405px;
+                width: 405px;
+                background-color: yellow;
+            }
+            input[type=number]:focus {
+                max-width: 105px;
+                width: 105px;
+                background-color: yellow;
+            }
+            .div_border {
+                border: 1px solid black;
+                border-radius: 10px;
+                padding: 10px;
+            }
+            button{
+                background-color: maroon;
+                color:white;
+                font-size: 90%;
+                font-weight: 900;
+                border: 0px;
+                border-radius: 13px;
+            }
+            button:hover, input[type=checkbox]{
+                cursor: pointer;
+                background-color: tomato;
+            }
+            #submitButton{
+                padding:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color: red;">
+            <button>Start Scribing</button>
+        </div>
+	<div style="background-color: yellow;">
+            Ценовик <input type="number" id="newPriceInput" />
+	    <span id="newPriceSpan"><span>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.1.4/core.min.js"></script>
+        <script src="https://unpkg.com/@feathersjs/client@^3.0.0/dist/feathers.js"></script>
+
+        <script src="popup.js"></script>
+    </body>
+</html>
